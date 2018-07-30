@@ -1,0 +1,55 @@
+.wrap{
+    border: 1px solid #333;
+}
+
+dd,dl,h1,h2{
+    margin: 0;
+    padding: 0;
+}
+
+.mgr1{
+    margin-right: 1em;
+}
+
+.mgr3{
+    margin-right: 3em;
+}
+
+h1{
+    color: #fff;
+    background-color:#333;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+div.hidden{
+    overflow: hidden;
+    border-top: 1px solid #333;
+}
+
+h2{
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: #888;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1em;
+}
+
+dl{
+    float: left;
+    height: 90px;
+    padding: 10px 0 1px 8px;
+}
+
+dt{
+    display: inline;
+    font-weight: bold;
+}
+
+dd{
+    display: inline;
+}
