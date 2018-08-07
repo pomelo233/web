@@ -40,6 +40,10 @@ a{
     vertical-align: middle;
 }
 
+.header_content .loginbar_item a{
+    text-decoration: underline;
+}
+
 .banner {
     background-color: #6b3;
 }
