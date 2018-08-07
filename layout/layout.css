@@ -5,7 +5,8 @@ ul {
     padding: 0;
 }
 
-a:link {
+a{
+    text-decoration: none;
     color: #fff;
 }
 
@@ -32,11 +33,11 @@ a:link {
 
 .header_content .loginbar_item {
     float: right;
-    font-size: 12px;
-    line-height: 24px;
-    vertical-align: middle;
     list-style: none;
     margin-right: 1em;
+    line-height: 24px;
+    vertical-align: middle;
+    font-size: 12px;
 }
 
 .banner {
@@ -102,8 +103,7 @@ a:link {
     line-height: 50px;
 }
 
-.nav_item a {
-    text-decoration: none;
+.nav_item a{
     color: #000;
 }
 
