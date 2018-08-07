@@ -5,221 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="layout.css">
+    <!-- 根据设计稿实现布局 -->
     <title>layout</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        a:link {
-            color: #fff;
-        }
-
-        .header {
-            background-color: #333;
-        }
-
-        .hwrap {
-            width: 960px;
-            margin: 0 auto;
-            color: #fff;
-            overflow: hidden;
-        }
-
-        .hwrap h1 {
-            float: left;
-            line-height: 3em;
-            vertical-align: middle;
-        }
-        
-        .hwrap ul{
-            overflow: hidden;
-        }
-
-        .hwrap ul li {
-            float: right;
-            font-size: 12px;
-            line-height: 24px;
-            vertical-align: middle;
-            list-style: none;
-            margin-right: 1em;
-        }
-
-        .banner {
-            background-color: green;
-        }
-
-        .banwrap {
-            width: 960px;
-            height: 300px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .banner ul {
-            position: absolute;
-            right: 0;
-            bottom: 10px;
-        }
-
-
-        .banner ul li {
-            list-style: none;
-            width: 30px;
-            height: 30px;
-            border: 1px solid #000;
-            background-color: #bbb;
-            color: green;
-            line-height: 30px;
-            text-align: center;
-            vertical-align: bottom;
-            display: inline-block;
-        }
-
-        .banner ul li.hover {
-            padding-top: 10px;
-            background-color: #fff;
-        }
-
-        .mainnav{
-            background-color: #fff;
-            border-bottom: 1px solid #888;
-        }
-
-        .mainnav .navwrap{
-            width: 960px;
-            height: 60px;
-            margin: 0 auto;
-            position: relative;
-        }
-        
-        .mainnav .navwrap ul{
-            position: absolute;
-            left: 0;
-            bottom: -1px;
-        }
-
-        .mainnav ul li{
-            list-style: none;
-            padding: 0 30px;
-            line-height: 3em;
-            text-align: center;
-            border: 1px solid #888;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            float: left;
-            margin-left: -1px;
-            background-color: #eee;
-        }
-        
-        .mainnav ul li.hover{
-            background-color: #fff;
-            border-bottom: 1px solid rgba(255, 255, 255, 1);
-        }
-        
-        .content{
-            width: 960px;
-            margin: 0 auto;
-            display: flex;
-            flex-flow: row wrap;
-            
-        }
-
-        .content div{
-            padding: 80px;
-            white-space: nowrap;
-            border: 1px solid #ccc;
-            margin: 5px;
-            text-align: center;
-            font-size: 12px;
-        }
-        
-        .con1,.con2{
-            flex-grow: 2;
-        }
-
-        .con3{
-            flex: 1;
-        }
-        
-        .con4,.con5,.con6,.con7,.con8,.con9,.con10{
-            flex-grow: 1;
-        }
-
-        .content .mgl0{
-            margin-left: 0;
-        }
-
-        .content .mgr0{
-            margin-right: 0;
-        }
-
-        .footer{
-            margin: 0 auto;
-            height: 150px;
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-        .footer p{
-            text-align: center;
-            color: #fff;
-            font-size: 12px;
-            padding-top: 12px;
-        }
-    </style>
 </head>
 
 <body>
     <div class="wrap">
         <div class="header">
-            <div class="hwrap">
-                <h1>Logo</h1>
-                <ul class="asidenav">
-                    <li>
+            <div class="header_content">
+                <h1 class="header_logo">Logo</h1>
+                <ul class="header_loginbar">
+                    <li class="loginbar_item">
                         <a href="javascript:void(0)">Login</a>
                     </li>
-                    <li>
+                    <li class="loginbar_item">
                         <a href="javascript:void(0)">Register</a>
                     </li>
-                    <li>
+                    <li class="loginbar_item">
                         <a href="javascript:void(0)">Github</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="banner">
-            <div class="banwrap">
-                <ul class="num">
-                    <li>1</li>
-                    <li class="hover">2</li>
-                    <li>3</li>
-                    <li>4</li>
+            <div class="banner_content">
+                <ul class="banner_list">
+                    <a href="javascript:void(0)">
+                        <li class="banner_item">1</li>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <li class="banner_item hover">2</li>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <li class="banner_item">3</li>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <li class="banner_item">4</li>
+                    </a>
                 </ul>
             </div>
         </div>
-        <div class="mainnav">
-            <div class="navwrap">
-            <ul>
-                <li class="hover">HOME</li>
-                <li>PROFILE</li>
-                <li>ABOUT</li>
+        <div class="nav">
+            <ul class="nav_list">
+                <li class="nav_item hover">
+                    <a href="javascript:void(0)">HOME</a>
+                </li>
+                <li class="nav_item">
+                    <a href="javascript:void(0)">PROFILE</a>
+                </li>
+                <li class="nav_item">
+                    <a href="javascript:void(0)"></a>ABOUT</a>
+                </li>
             </ul>
         </div>
-        </div>
         <div class="content">
-            <div class="con1 mgl0">This is Content 1</div>
-            <div class="con2">MaybeContent 2</div>
-            <div class="con3 mgr0">Content 3</div>
-            <div class="con4 mgl0">Content 4</div>
-            <div class="con5">Content 5</div>
-            <div class="con6">Content 6</div>
-            <div class="con7 mgr0">Content 7</div>
-            <div class="con8 mgl0">Content 8</div>
-            <div class="con9">Content 9</div>
-            <div class="con10 mgr0">Content 10</div>
+            <div class="content_row">
+                <div class="content_unit">This is Content 1</div>
+                <div class="content_unit">MaybeContent 2</div>
+                <div class="content_unit content_unit3">Content 3</div>
+            </div>
+            <div class="content_row">
+                <div class="content_unit">Content 4</div>
+                <div class="content_unit">Content 5</div>
+                <div class="content_unit">Content 6</div>
+                <div class="content_unit">Content 7</div>
+            </div>
+            <div class="content_row">
+                <div class="content_unit">Content 8</div>
+                <div class="content_unit">Content 9</div>
+                <div class="content_unit">Content 10</div>
+            </div>
         </div>
         <div class="footer">
-            <p>© 2018 ife.baidu.com</p>
+            <p class="copyright">© 2018 ife.baidu.com</p>
         </div>
     </div>
 </body>

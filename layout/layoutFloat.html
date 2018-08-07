@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Flaot方式 -->
+    <title>layoutFloat</title>
+    <style>
+        .wrap {
+            width: auto;
+            margin: 20px auto;
+        }
+
+        .lf {
+            background-color: aqua;
+        }
+
+        .mid {
+            background-color: lightgreen;
+        }
+
+        .rt {
+            background-color: bisque;
+        }
+
+        .lf1 {
+            float: left;
+            width: 30%;
+        }
+
+        .rt1 {
+            overflow: hidden;
+        }
+
+        .lf2 {
+            float: left;
+            width: 200px;
+        }
+
+        .rt2 {
+            overflow: hidden;
+        }
+
+        .lf3 {
+            overflow: hidden;
+        }
+
+        .rt3 {
+            float: right;
+            width: 200px;
+        }
+
+        .lf4 {
+            float: left;
+            width: 200px;
+        }
+
+        .rt4 {
+            float: right;
+            width: 200px;
+        }
+
+        .mid4 {
+            overflow: hidden;
+            width: auto;
+        }
+
+        .lf5 {
+            float: left;
+            width: 200px;
+        }
+
+        .mid5 {
+            float: left;
+            width: 1000px;
+        }
+
+        .rt5 {
+            overflow: hidden;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 实现一个两栏布局，左侧占30%宽度，右侧占70%宽度 -->
+    <div class="wrap">
+        <div class="lf lf1">左栏30%
+            <br>
+            <br>左栏30%</div>
+        <div class="rt rt1">右栏
+            <br>
+            <br>右栏</div>
+    </div>
+
+    <!-- 实现一个两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化 -->
+    <div class="wrap">
+        <div class="lf lf2">左栏固定
+            <br>
+            <br>左栏固定</div>
+        <div class="rt rt2">右栏
+            <br>
+            <br>右栏</div>
+    </div>
+
+    <!-- 实现一个两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化 -->
+    <div class="wrap">
+        <div class="rt rt3">右栏固定
+            <br>
+            <br>右栏固定</div>
+        <div class="lf lf3">左栏
+            <br>
+            <br>左栏</div>
+    </div>
+
+    <!-- 实现一个三栏布局，左侧固定宽度，右侧固定宽度，中间部分宽度随浏览器宽度变化而自适应变化 -->
+    <div class="wrap">
+        <div class="lf lf4">左栏固定
+            <br>
+            <br>左栏固定</div>
+        <div class="rt rt4">右栏固定
+            <br>
+            <br>右栏固定</div>
+        <div class="mid mid4">中间
+            <br>
+            <br>中间</div>
+    </div>
+
+    <!-- 实现一个三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化 -->
+
+    <div class="wrap">
+        <div class="lf lf5">左栏固定
+            <br>
+            <br>左栏固定</div>
+        <div class="mid mid5">中间固定
+            <br>
+            <br>中间固定</div>
+        <div class="rt rt5">右栏
+            <br>
+            <br>右栏</div>
+    </div>
+</body>
+
+</html>
