@@ -319,3 +319,152 @@
     justify-content: space-between;
     align-content: space-between;
 }
+
+.crew_img-1{
+    position: relative;
+}
+
+.crew_hover{
+    position: absolute;
+    width: 470px;
+    height: 340px;
+    color: #fff;
+    background-color: rgba(20, 20, 20, 0.65);
+}
+
+.crew_hover-title{
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 32px;
+}
+
+.crew_hover-text{
+    margin-bottom: 50px;
+    font-size: 12px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.crew_hover-fb{
+    background-position: -342px 0;
+    margin-right: 20px;
+	width: 51px;
+	height: 54px;
+}
+
+.crew_hover-tt{
+    background-position: -426px -5px ;
+    margin-right: 22px;
+	width: 51px;
+	height: 54px;
+}
+
+.crew_hover-ig{
+    background-position: -518px -5px ;
+	width: 51px;
+	height: 54px;
+}
+
+.contact{
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 315px;
+    height: 700px;
+}
+
+.contact_form{
+    float: left;
+    margin-top: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 470px;
+    height: 560px;
+    text-align: center;
+}
+
+.contact_contn{
+    float: right;
+    margin-top: 100px;
+    width: 360px;
+    height: 560px;
+}
+
+.contact_form-title{
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.contact_form-email{
+    margin-top: 30px;
+    width: 370px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 26px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact_form-subject{
+    margin-top: 30px;
+    width: 370px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 26px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact_form-msg{
+    resize: none;
+    margin-top: 30px;
+    width: 370px;
+    height: 144px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact_form-msg::-webkit-input-placeholder{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.contact_form-send{
+    margin-top: 30px;
+    width: 370px;
+    height: 50px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #000;
+}
+
+.contact_contn-title{
+    font-size: 42px;
+    line-height: 52px;
+}
+
+.contact_contn-text{
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.contact_add-ico{
+	background-position: -13px -90px ;
+	width: 29px;
+	height: 40px;
+}
+
+.contact_ph-ico{
+	background-position: -98px -83px ;
+	width: 29px;
+	height: 40px;
+}
+
+.contact_mail-ico{
+    float: left;
+	background-position: -178px -78px ;
+	width: 29px;
+	height: 45px;
+}
+
+.contact_add-text{
+    display: inline-block;
+}
