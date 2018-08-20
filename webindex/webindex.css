@@ -16,6 +16,10 @@
     float: right;
 }
 
+li{
+    list-style: none;
+}
+
 .wrap{
     margin: 0 auto;
     width: 1600px;
@@ -441,18 +445,22 @@
 }
 
 .contact_contn-text{
+    margin-top: 40px;
+    margin-bottom: 60px;
     font-size: 16px;
     line-height: 26px;
     color: rgba(0, 0, 0, 0.7);
 }
 
 .contact_add-ico{
+    float: left;
 	background-position: -13px -90px ;
 	width: 29px;
 	height: 40px;
 }
 
 .contact_ph-ico{
+    float: left;
 	background-position: -98px -83px ;
 	width: 29px;
 	height: 40px;
@@ -466,5 +474,98 @@
 }
 
 .contact_add-text{
-    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 26px;
+    vertical-align: top;
 }
+
+.contact_ph-num{
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 26px;
+    vertical-align: top;
+}
+
+.contact_mail-num{
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 26px;
+    vertical-align:middle;
+}
+
+.ft{
+    overflow: hidden;
+    padding: 80px 200px;
+    height: 250px;
+    color: #fff;
+    background-color: #141414;
+}
+
+.ft_sect{
+    float: left;
+    width: 300px;
+}
+
+.ft_title{
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.ft_item{
+    font-size: 16px;
+    line-height: 46px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.ft_eyl-text{
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.ft_eyl-ico1{
+    background-position: -278px -185px ;
+    margin-right: 20px;
+	width: 17px;
+	height: 14px;
+}
+.ft_eyl-ico2{
+	background-position: -33px -183px ;
+    margin-right: 20px;
+    width: 9px;
+	height: 18px;
+}
+
+.ft_eyl-ico3{
+	background-position: -74px -184px ;
+    margin-right: 20px;
+    width: 24px;
+	height: 15px;
+}
+
+.ft_eyl-ico4{
+    background-position: -134px -182px ;
+    margin-right: 20px;
+	width: 9px;
+	height: 16px;
+}
+
+.ft_eyl-ico5{
+    background-position: -181px -181px ;
+    margin-right: 20px;
+	width: 14px;
+	height: 17px;
+}
+
+.ft_eyl-ico6{
+    background-position: -230px -181px ;
+	width: 16px;
+	height: 15px;
+}
+
+
+
