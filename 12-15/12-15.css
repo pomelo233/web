@@ -1,0 +1,87 @@
+html,body,.wrap{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrap{
+    overflow: hidden;
+}
+
+/* .spr{
+    background: url(images/sprites.png) no-repeat;
+} */
+
+.aside{
+    float: left;
+    border: 1px solid #1d2531;
+    width: 100px;
+    height: 100%;
+    background-color: #1d2531;
+}
+
+.nav{
+    float: left;
+    width: 250px;
+    height: 100%;
+    background-color: #222c3c;
+}
+
+.left{
+    float: left;
+    width: 400px;
+    height: 100%;
+}
+
+.right{
+    width: auto;
+    height: 100%;
+}
+
+.aside_msg{
+    display: inline-block;
+    position: relative;
+    width: 60px;
+	height: 60px;
+    border-radius: 50%;
+    background-color: #2ba0f7;
+}
+
+.aside_msg::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -12px;
+    background: url(images/sprites.png) no-repeat;
+    background-position: 0 -7px ;
+	width: 26px;
+    height: 23px;
+}
+
+/* .aside_rkt{
+	background-position: -51px 0;
+	width: 25px;
+	height: 35px;
+}
+
+.aside_game{
+	background-position: -95px -7px ;
+	width: 33px;
+	height: 23px;
+}
+
+.aside_more{
+	background-position: -8px -61px ;
+	width: 16px;
+	height: 16px;
+}
+
+.aside_set{
+	background-position: -56px -60px ;
+	width: 16px;
+	height: 16px;
+}
+ */
