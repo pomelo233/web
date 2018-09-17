@@ -1,16 +1,28 @@
-html,body,.wrap{
+*{
     margin: 0;
     padding: 0;
+}
+
+html,body,.wrap{
     height: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+h4{
+    margin: 0;
 }
 
 .wrap{
     overflow: hidden;
 }
 
-/* .spr{
+.spr{
+    display: inline-block;
     background: url(images/sprites.png) no-repeat;
-} */
+}
 
 .aside{
     float: left;
@@ -22,7 +34,8 @@ html,body,.wrap{
 
 .nav{
     float: left;
-    width: 250px;
+    padding: 0 30px;
+    width: 190px;
     height: 100%;
     background-color: #222c3c;
 }
@@ -38,50 +51,223 @@ html,body,.wrap{
     height: 100%;
 }
 
-.aside_msg{
-    display: inline-block;
+.aside_top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.aside_ico{
+    display: block;
     position: relative;
     width: 60px;
 	height: 60px;
     border-radius: 50%;
-    background-color: #2ba0f7;
 }
 
-.aside_msg::after{
+.aside_ico::after{
     content: '';
-    display: inline-block;
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
+    background: url(images/sprites.png) no-repeat;
+}
+
+.aside_ico-msg{
+    margin-bottom: 20px;
+    background-color: #2ba0f7;
+}
+
+.aside_ico-msg::after{
     margin-top: -13px;
     margin-left: -12px;
-    background: url(images/sprites.png) no-repeat;
     background-position: 0 -7px ;
 	width: 26px;
     height: 23px;
 }
 
-/* .aside_rkt{
-	background-position: -51px 0;
+.aside_ico-rkt{
+    margin-bottom: 20px;
+    background-color: #937ce4;
+}
+
+.aside_ico-rkt::after{
+    margin-top: -18px;
+    margin-left: -13px;
+    background-position: -51px 0;
 	width: 25px;
 	height: 35px;
 }
 
-.aside_game{
-	background-position: -95px -7px ;
+.aside_ico-game{
+    margin-bottom: 20px;
+    background-color: #e54428;
+}
+
+.aside_ico-game::after{
+    margin-top: -12px;
+    margin-left: -17px;
+    background-position: -95px -7px ;
 	width: 33px;
 	height: 23px;
 }
 
-.aside_more{
-	background-position: -8px -61px ;
+.aside_ico-add{
+    display: block;
+    position: relative;
+    width: 54px;
+    height: 54px;
+    border: 3px solid #2d3848;
+    border-radius: 50%;
+}
+
+.aside_ico-add::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -2px;
+    width: 4px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: #2d3848;
+}
+
+.aside_ico-add::after{
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 50%;
+    top: -2px;
+    left: -10px;
+    width: 20px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2d3848;
+}
+
+.aside_btm{
+    position: fixed;
+    left: 26px;
+    bottom: 20px;
+}
+
+.aside_ico-more{
+    background-position: -8px -61px ;
+    margin-right: 16px;
 	width: 16px;
 	height: 16px;
 }
 
-.aside_set{
+.aside_ico-set{
 	background-position: -56px -60px ;
 	width: 16px;
 	height: 16px;
 }
- */
+
+.nav_sect{
+    border-bottom: 1px solid #2a3547;
+    padding: 16px 0;
+}
+
+.nav_dbd{
+    border: none;
+}
+
+.nav_title{
+    font-size: 12px;
+    line-height: 40px;
+    font-weight: normal;
+    vertical-align: middle;
+    color: #5b6779;
+}
+
+.nav_ico-set{
+    float: right;
+    margin-top: 12px;
+}
+
+.nav_item{
+    width: 100%;
+    font-size: 14px;
+    line-height: 36px;
+    color: #b7c0cd;
+}
+
+.nav_item-blue{
+    float: right;
+    display: inline-block;
+    margin-top: 6px;
+    width: 32px;
+    height: 24px;
+    border-radius: 10px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #2a9ef5;
+}
+
+.nav_item-red{
+    float: right;
+    display: inline-block;
+    margin-top: 6px;
+    width: 24px;
+    height: 24px;
+    border-radius: 10px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #e24024;
+}
+
+.nav_ft{
+    position: fixed;
+    left: 130px;
+    bottom: 23px;
+    color: #eaebeb;
+}
+
+.nav_ft-goal{
+    overflow: hidden;
+    margin-bottom: 12px;
+    width: 190px;
+    font-size: 14px;
+}
+
+.nav_ft-left{
+    float: left;
+}
+
+.nav_ft-right{
+    float: right;
+}
+
+.nav_ft-goalimg{
+    position: relative;
+}
+
+.nav_ft-goalimg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgba(71, 83, 100, 0.3);
+}
+
+.nav_ft-goalimg::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgba(71, 83, 100, 1);
+}
+
